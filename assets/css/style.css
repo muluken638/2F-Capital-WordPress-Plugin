@@ -1,0 +1,206 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  
+  .kpi-card {
+    overflow: hidden;
+    position: relative;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.75);
+    padding: 1.5em;
+    border-radius: 0.3em;
+    font-family: sans-serif;
+    margin: 0.5em;
+    height: 150px; /* Increased height for better visibility */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+  
+  }
+  
+  .card-value {
+    font-size: 2.5rem;
+    font-weight: bolder;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    padding-left: 0.2em;
+  }
+  
+  .icon {
+    font-size: 3rem;
+    opacity: 0.16;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+  
+  .orange {
+    background: #ffc241;
+    color: #fff;
+  }
+  
+  .purple {
+    background: #886ab5;
+    color: #fff;
+  }
+  
+  .grey-dark {
+    background: #495057;
+    color: #efefef;
+  }
+  
+  .red {
+    background:rgb(16, 204, 25);
+    color: #fff;
+  }
+  
+  /* Responsive Design */
+  @media (min-width: 1024px) { /* Larger screens (4 cards per row) */
+    .container {
+      width: 100%;
+    }.kpi-card{
+        width: 20%;
+        gap: 2px;
+    }
+  }
+  
+  @media (max-width: 1024px) { /* Tablets (2 cards per row) */
+    .container {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 768px) { /* Mobile (1 card per row) */
+    .kpi_card {
+      width: 100%;
+      display: flex;
+      justify-items: center;
+      align-items: center;
+    }
+  }
+
+
+
+
+  /* preview table styles */
+
+  /* Styles for notifications */
+.notification {
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.notification.success {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.notification.email {
+  background-color: #2196F3;
+  color: white;
+}
+
+.notification.comment {
+  background-color: #ff9800;
+  color: white;
+}
+
+.notification.error {
+  background-color: #f44336;
+  color: white;
+}
+
+.notification a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Flexbox layout for form and buttons */
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Table styling */
+.article-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.article-table th, .article-table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.article-table th {
+  background-color: #f2f2f2;
+}
+
+.article-table td a {
+  margin-right: 10px;
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.article-table td a:hover {
+  text-decoration: underline;
+}
+
+/* Button styling */
+.btn-edit, .btn-preview, .btn-publish, .btn-comment {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.btn-edit {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.btn-preview {
+  background-color: #2196F3;
+  color: white;
+}
+
+.btn-publish {
+  background-color: #f44336;
+  color: white;
+}
+
+.btn-comment {
+  background-color: #ff9800;
+  color: white;
+}
+
+.btn-edit:hover, .btn-preview:hover, .btn-publish:hover, .btn-comment:hover {
+  opacity: 0.8;
+}
+
+.inline-form {
+  display: inline;
+}
+
+.comment-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+
+/* end of preview table styes  */
