@@ -1,6 +1,6 @@
 <?php
 // Display all pending articles
-$token  = '8122008791:AAFHF9dBn63PnWh8o2V9YcIaoaK0urX_jIw'; // Change to a correct Token
+$token  = '8122008791:AAFHF9dBn63PnWh8o2V9YcI'; // Change to a correct Token
 if ($pending_articles->have_posts()) :
     echo '<table class="gridtable">';
     echo '<thead>
